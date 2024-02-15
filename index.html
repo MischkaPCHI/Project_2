@@ -1,40 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/style.css">
     <script src="./scripts/index.js"></script>
-    <title>Fat Hub</title>
+    <title>FatHub</title>
 </head>
+
 <body>
 
-    <main class="main-box">
-        <h1 class="h1">Калькулятор Индекс Массы Тела</h1>
+    <form action="" class="main-box">
+        <h1 class="h1">BMI calculator</h1>
         <div class="position">
+            <div class="input">
+                <input class="input-field" type="text" id="your-height" name="height" placeholder="Height (cm):"
+                    required>
 
+                <input class="input-field" type="text" id="your-weight" name="weight" placeholder="Weight (kg):"
+                    required>
+            </div>
+            <div class="result-button-box">
+                <div class="output">
+                    <div class="output-box">
+                        <p class="placeholder-for-p">BMI:</p>
+                        <div class="inner_output" id="result1">bmi comes here</div>
+                    </div>
+                    <div class="output-box">
+                        <p class="placeholder-for-p">Result:</p>
+                        <div class="inner_output" id="result2">result comes here</div>
+                    </div>
 
-
-            <input class="inputs" type="text" id="your-height" name="height" placeholder="Рост (в сантиметрах):" required>
-
-            <input class="inputs" type="text" id="your-weight" name="weight" placeholder="Вес (в килограммах):" required>
-            
-            <div class="output">
-                <div>
-                <p class="placeholder-for-p">Результат</p>
-                <div class="output" id="result-output"></div>
                 </div>
-                <div>
-                <p class="placeholder-for-p">ИМТ соответсвует</p>
-                <div class="output" id="result-output"></div>
-                </div>
+                <div class="button-box">
+                <button class="button">Calculate</button>
+            </div>
             </div>
 
         </div>
+    </form>
 
-        <button class="button">Рассчитать</button>
-
-    </main>
-    
 </body>
+
 </html>
